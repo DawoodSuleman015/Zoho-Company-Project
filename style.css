@@ -1,0 +1,276 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    width: auto;
+    display: flex;
+}
+.nav-icon{
+    margin-left: 20px;
+}
+.menu-buttons{
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.dropdown-btt{
+    font-size: 13px;
+    margin-left: 5px;
+}
+.menu-buttons-2{
+    display: flex;
+    height: 80px;
+    width: 350px;
+    margin-left: 400px;
+}
+.menu-icons{
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.menu-icons-2{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.h1-1{
+    padding-left: 50px;
+    padding-top: 70px;
+    color: black;
+}
+.para-span{
+    color: black;
+}
+.span-3{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.banner-1{
+    position: relative;
+    right: 110px;
+}
+.link-link a{
+    text-decoration: none;
+}
+.link-link{
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+    font-size: 15px;
+}
+.container-1{
+    width: 1300px;
+    position: relative;
+    right:90px;
+    height: 350px;
+    display: flex;
+}
+#service{
+    font-size: 18px;
+    padding-top: 42px;
+    padding-left: 40px;
+}
+#name{
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+    padding-left: 40px;
+}
+#name-1{
+    position: relative;
+    bottom: 30px;
+    padding-left: 40px;
+}
+#name-2{
+    position: relative;
+    bottom: 30px; 
+    padding-left: 40px;
+}
+#about{
+    margin-left: 250px;
+    font-size: 20px;
+    padding-top: 20px;
+    position: relative;
+    bottom: 160px;
+}
+.person{
+    height: 100px;
+    width: 400px;
+    margin-left: 250px;
+    position: relative;
+    bottom: 160px;
+    display: flex;
+}
+#Prakarsh{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#company{
+    position: relative;
+    bottom: 14px;
+    padding-left: 20px;
+}
+#trust{
+    text-align: center;
+    padding-top: 40px;
+}
+#brands{
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.customer-review{
+    justify-content: center;
+}
+#customer-review{
+    text-align: center;
+    padding-top: 10px; 
+}
+#customer-review a{
+    text-decoration: none;
+}
+#img-div1{
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zh-enterprise-illus.svg);
+}
+.about-div-1{
+    height: 250px;
+    width: 300px;
+}
+.about-div-2{
+    height: 250px;
+    width: 250px;
+}
+#strong-2{
+    padding-left: 10px;
+}
+#position{
+    padding-left: 10px; 
+    font-size: 12px;
+}
+.anchor{
+    font-size: 13px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.anchor a{
+    text-decoration: none;
+}
+.zoho-enterprise{
+    font-size: 50px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.zoho-service{
+    font-size: 18px;
+    padding-left: 40px;
+}
+#made{
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.box-1{
+    height: 250px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.box-2{
+    height: 250px;
+    width: 300px;
+    margin-top: 20px;
+}
+.hello-span{
+    font-size: 25px;
+}
+.number{
+    color: white;
+    font-weight: 17px;
+}
+.number-1{
+    color: white;
+    font-size:20px;
+    padding-left: 10px;
+}
+.number-2{
+    font-size:20px;
+    padding-left:100px;
+    color: white;
+}
+.number-3{
+    font-size:20px;
+    padding-left:100px;
+    color: white;
+}
+.discription-name{
+    font-size: 20px;
+    padding-left: 30px;
+    color: black;
+}
+.discription-about{
+    padding-left: 30px;
+    font-size: 18px;
+}
+#vision-title{
+    padding-left: 30px;
+    font-size: 35px;
+    padding-top: 30px;
+}
+#vision{
+    padding-left: 30px;
+}
+.can-1{
+    width: 300px;
+    height: 300px;
+}
+.can-2{
+    width: 230px;
+    height: 300px;
+}
+.can-3{
+    width: 200px;
+    height: 300px;
+}
+.foot-ul{
+    list-style: none;
+}
+.foot-list a{
+    text-decoration: none;
+    color: black;
+}
+.foot-list{
+    padding-top: 6px;
+}
+.foot-list a:hover{
+    color: blue;
+
+}
+.foot-list-1{
+    list-style: none;
+    
+}
+.list-2{
+    list-style: none;
+}
+.foot-list-1 a{
+    list-style: none;
+    color: black;
+} 
+.foot-list-1 a:hover{
+    list-style: none;
+    color: blue;
+}  
+.anchor-2 a{
+    text-decoration: none;
+    padding-left: 25px;
+}   
+.span-5{
+    padding-left: 65px;
+    font-size: 15px;
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/png;base64,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">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Zoho Corporation</title>
+</head>
+<body>
+     <nav>
+         <div class="nav-icon">
+            <img src="https://www.zoho.com/sites/zweb/images/zoho_general_pages/zoho-logo-512.png" alt="Zoho" height="60px" style="margin-top: 5px;">
+         </div>
+         <div class="menu-buttons">
+            <button type="button" class="btn btn- m-lg-2" style="color: rgb(3, 3, 36); font-size: 18px; border: none;">Product&nbsp;<span class="dropdown-btt"><i class="bi bi bi-chevron-down"></i></span></button>
+            <button type="button" class="btn btn- m-lg-2" style="color: rgb(3, 3, 36); font-size: 18px; border: none;">Customer&nbsp;</button>
+            <button type="button" class="btn btn- m-lg-2" style="color: rgb(3, 3, 36); font-size: 18px; border: none;">Company&nbsp;<span class="dropdown-btt"><i class="bi bi bi-chevron-down"></i></span></button>
+         </div>
+         <div class="menu-buttons-2">
+            <p class="menu-icons"><i class="bi bi-search"></i></p>
+            <p class="menu-icons"><img src="./WPFCFkdHCH.gif" height="30px"></p>
+            <p class="menu-icons"><i class="bi bi-globe"></i></p>
+            <p class="menu-icons">Sign in</p>
+            <p class="menu-icons-2"><button type="button" class="btn btn-outline-danger" style="border-radius: 2px; height: 40px; margin-top: 10px; ">Sign Up</button></p>
+         </div>
+     </nav>
+     <div class="container-fluid" style=" height: 800px; background-color: whitesmoke;">
+          <h1 class="h1-1">Your life's work,<br>
+            powered by our life's work</h1>
+        <img src="https://www.pngall.com/wp-content/uploads/11/Horizontal-Line-PNG-Cutout.png" height="20px" width="50px" style="margin-left: 50px;">
+        <br>
+        <p style="font-size: 22px; padding-left: 50px; padding-top: 5px;">
+            A unique and powerful software suite to transform the way <br>you work. Designed for businesses of all sizes, built by a<br>company that <span class="para-span"> Value privacy.</span></em></p>
+            <button class="btn btn-danger" style="width: 230px; height: 50px; margin-top: 20px; border-radius: 2px; margin-left: 50px; background-color: red;">GET STARTED FOR FREE <span class="span-3"><i class="bi bi-chevron-right"></i></span></button>
+            <div class="container-md" style="height: 400px;">
+                <img class="banner-1"src="https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zh-homev2-banner-india-3.webp" alt="Zoho" height="300px">
+            </div>
+            <div class="container-sm" style=" width: 380px; height: 600px; position: relative; bottom: 700px; left: 420px; border-radius: 3px; background-color: white;">
+               <p style="padding-left: 25px; padding-top: 20px;">FEATURED APPS</p>
+               <div class="container-sm" style="display: flex;">
+                  <span class="dis-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZMrC0jI_7b9vMtjiZaYfdU3SrBIvI8pVIgw&usqp=CAU" alt="Zoho Service"  height="50px" style="margin-left: 20px; margin-bottom: 20px; margin-top: 15px;"></span>
+                  <div class="about">
+                    <p class="text-capitalize lead" style="padding-top: 2px; padding-left: 10px; font-weight: bold;">CRM</p>
+                    <p  style="font-size: 12px; padding-left: 10px; position: relative; bottom: 15px;">Convert leads and close sales <br>deals faster.</p>
+                  </div>
+               </div>
+               <div class="container-sm" style="display: flex;">
+                <span class="dis-img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAAA5OTnJyclnZ2c1NTX19fWVlZUpKSlJSUn6+vru7u7S0tKamprm5ubW1tbe3t5ubm5gYGBZWVmMjIyoqKgXFxegoKB8fHwKCgq1tbU/Pz+Dg4O7u7tPT08hISHExMR2dnZDQ0MuLi4iEn0sAAADyUlEQVR4nO2d23aqMBRFBbHiBRVBFK9Y//8fj1Y8VQ/1oZK1YJ81H2nHMHMk5LKzEzodIYQQQgghhBBCCCGEEEIIIYSoiW40/+z9Bn8zSOJ0sRt/sBVeMUwz732ypF80VHNZg96NXtodsn2emexrFLyQrcaNkpwdaha8sFmO2F5/meQOBM9kaUMch6EbwQv9RrTVoztBzzsUbL1OZ+xS8ExMHz0Sx4ZeOOUKzr5LEk0nk3HqoF9dUw37t2KsytY0CupXXDINb2P99vuRA8WIJzgqx8LB/cM6ZqhP8GpxUpage/9wXb+ht2MZlmPF4aFLHzkw9GYkw+7155PHpy5mORvS9KY0DB6f+g4MvdS8IamdIg3n5g29sXlDSiVCDb2JeUNGd4o19OwbEpaKYEPCGgNsuDdvmJs3JMzc0IaFeUN8UAptiO9M0Ybb6mIYMjyaN4xl2HpD+63Ufk9jf7SwP+IX5g3Nz7ztr57sr4DtRzHMR6IIr6EiwjVjPqofVJfBkCElOQppiF8bog0ZbyHUcEERBBom1QVwDswwY6WZwgxZKVEww271zwMAGRYMtysQw4ySSFOCMPRp7+AFgGHMPXPh3pCbxu7eMKAfDHJrmBcUqQcc1+GAf4DN+XuYrag9KWa0iK2PFmeOxLaKmpdGtEERtrbYsGZuwDU+6ewTNFefsgiGRhNPjA4HvDNDCLehd0jxiuhdbnxDRRvig4pwQ69v3hB9+olg2DNvCN7AYBjm0Fk4wxBbiRRD37whtDvlGCLzaDmGG/OGyN1EkiHwlgySIfBFJBkCz62TDH3ctIZkmOMWwiRDYMCGZYgbLliGuDRFliFuZsoyxGUQydAV9lup/b7U/nhofk7Tw20lkgyBuxckQ+CRbpIhMGKqOI0bTsCcBY4h8mYFjmFh3TBDbj5RDKFHSSmG0HwMhuEKKUgxxKbUEAzBOYp4Q2C4m2SIPu4MN4SflUUbYvtRgiHhNmisIeF6Gt0aUSucTwfgDHPSNzxghgnnzgicIenKiA7KcGX8ZFfMaqBfODcMU6qfc8NgR/+unEPDLF6Tq+8LV4bzqCmfzq027L3hFsbRrgl1d2PsD858PuUKBoM7Xn3eKr/+yz6ZH7f9xbqY0g+n/4boheGJXbha6L8wDBvysr2HDNuPDNuPDNuPDNuPDNvP/2YYWjdMh93QsqF/2d4cpnYNbzvws41Nw/1dQmFk0DB/jMvPEmuGwT/BpYUtw6qdsdHcjuFPd6zuctod1rWyKH7808fWhKEQQgghhBBCCCGEEEIIIYQQon38Ae6dT/sENfmYAAAAAElFTkSuQmCC" alt="Zoho Service" height="70px" style="margin-left: 10px; margin-bottom: 20px;"></span>
+                <div class="about">
+                    <p class="text-capitalize lead" style="padding-top: 2px; padding-left: 2px; font-weight: bold;">BOOKS</p>
+                    <p  style="font-size: 12px; position: relative; bottom: 15px;">Powerful financial platforms for<br>growing business.</p>
+                  </div>
+               </div>
+               <div class="container-sm" style="display: flex;">
+                <span class="dis-img"><img src="data:image/png;base64,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" alt="Zoho Service"  height="50px"  style="margin-left: 13px; margin-bottom: 30px;"></span>
+                <div class="about">
+                    <p class="text-capitalize lead" style="padding-top: 2px; padding-left: 10px; font-weight: bold;">MAIL</p>
+                    <p  style="font-size: 12px; padding-left: 10px; position: relative; bottom: 15px;">Secure your email service for your<br>business.</p>
+                  </div>
+               </div>
+               <div class="container-sm" style="display: flex;">
+                <span class="dis-img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABMlBMVEX////+qDIMplbOAGf+mSMQu2f0D3j/UH7/zDMy1zYAokz+pCHzAG793+n23+f+pS/LAFrhCnCmq0r8P3z/vi8JpFf+tzLxPXgr2jMpz0X/Q3Yeu0n+oib/yiP/yjMi1ScXwF/WFGv/5J7+kgD/QXWa6Zz9tVD3W3kAuF/0AH7/0jD/+/Aw1DgAt1v/wtC4V2wY4S5lu0/y/PL/tsf/Wob/zNj/bJH/1uD/eJr/gaD/6u//jKj/mrL3YXW0XWr/6NL/1qe66M+h4L3+t1z/8/b/n7b+2pmc3Zf2/fdpuFO7U27+ulHVX3IAoUOmqkr+oAX+rkH/tm3n6tVo0Jrd9OhRyYmW07D+q1L/0p//48c7xH2EzKP+pUT+yoz/27mv5MdvxJP+w3n/z6JdvYVAtHOK2a4e1q3gAAAG+ElEQVR4nO3ci1YbVRQGYEiTpoBxpBabpq0UB2qVCuUOAQltoUIVEUUBLSC2vP8rmDOTSeZyLnvPOWcurP2/wORb/78ZFmuRoaFss7S8lPETs83ScqveWl7azftz2ArzsbRuaY+BzzPWb59xLuTze5zL+yMZzdzqdD2e22ScW20lfJ5x9XYYV5b5Pr/Hlbw/nnZWOPsMZ3q13EaVr+zGNcH9Je+xnMY1QH+DHtfy/rjorK3DfZ5xvVzGtXXYPsNplcjYSOHzjY28PzoojQ3cPsMpw1YbG+n66/e4Uewe25q+ohvbGvsMZ3qjnTeFm8ZmS7/AwLhZvB7bBn3dtFqbxepx16yvcMb21rRpn2ec3iqGsb1Vt+HzjK0CGHf3rPk8Y30r3z897u4Zv7+EsZWjMQOfb9zLy9j47MsMgPX6wy8+z014965948OpO7kKbRu7vjt5C20aPV8BhLaMPV8hhDaMfV9BhKaNIV9hhCaNEV+BhKaMMV+hhCaMCV/BhLpGjq9wQh0j11dAYVqjwFdIYRqj0FdQIdYo8RVWiDFKfQUWQo0KX6GFEKPSV3ChygjwFV4oM4J8JRCKjEBfKYQ8I9hXEmHciPCVRhg2onwlEgZGpK9UQmZE+0omvDuO9pGQhCQkIQlJSEISkpCEJCQhCUlIQhKSkIQkJCEJSUhCEpKQhCQkIQlJSEISkpCEJCQhCUlIwoyFOX2Xy+y7H7/LRrj902Ievm/uPf3++bdoI1o4Nb/QnByZydrIfPe6wRuRwqn3C83myMjIZHNmP1PfU8+XxogTzh+8Yj6WycnMegz6Gxgx94gRbh80A59nzGarcR+2R7CQ3V/Y1zPa3mp4nxHjz1AjVPh+4VXc19uqTSOvP+xWYcLtA67P8j3KfPCtAoS8fca2asWo8EGNSmHwfpDFwj2K7g9/jyqh4P4sb1W1T8w9yoWx94OiR1NGjE+9VYlQdX+2jEifaqtCIeT+Ekb93+Wg9wfvUSScF78fpEa9e8TuM2rk3yNfuI3vr29Mv1Udn7hHjjDNPmPGNFtNu8+IkXOPSSHw/SA14req29+gx/hW40LJ72coYxNlNOXzjdEeI0Ls+0FqhN+jSV/SGBLq3h/HCLlHE/cnMw6E8/r3lzCq79F0fwNjcI/j/fsz2l/fKN+qLZ9v9HscN31/GKOFfUaM3rtj3Hs/WPN5Rv7fAWzcX8LY3ep42t/PkMZEjxb3GTX+Yre/vrE5ExMeffV1FsIHY/efPcpC+PLxYUw45jj2jQ+eVKu/1mrPHlnmNV8+npgYjQuHu7FrZL5q9X6tZtnY9VUmKhWu0KbR9/WENo2+Tyi0ZQx8faElYzPwSYTDFu5x4AsJLRi9+6tUVELjPYZ9EaFhY6g/pdCkMeqLCZnR1Lsj6lMKTRnjvoTQUI+RfQKFJoxJH0dowNiM9wcU6hp5Pq5Q18jzAYU6Rr5PINS4R25/CGHad4fIJxSm7JFzf1hhqh7FPokwjVHUH1KINcp8UiHWKPMhhRij3KcQIozC+0sphN6jyqcUAo2S+0srBPWo9gGEAKOyv5RClRHiAwlV7w6IL6VQtlWYDyiU9AjYp45Q2CPUBxYKjKB9agp5RrgPIeQZ4T4tYdyI8aGEMSOiP21h+B5xPqQwZATfnxlhv0esDy3sGZH9GREyI96XQsiMeJ8R4bCD96US1mp4X+mEKUJCEpKQhCQkIQlJSEISkpCEJCQhCUlIQhKSkIQkJCEJSUhCEpKQhCQkIQlJSEISkpCEJCyz8CgjoZuZMP7f6pe/4VtMIXSPf//jhxcZCEcnrobiuRzGGtFC97jTfdAJ3oj2VZI+lh1kj0ih7xvyjC9wRmx/f3F9eCNKOPAN4XtE+qTfNLTjwI0IoXvaiT3o5E+EEeEblfs8I/gewcKkzzeCiWBfRbzPcM6ARqDQPT0XPOg1tEewD/rNdLNnoK2ChGJfz2hKCNlnxDimNgKE7geZzzP+DTBCfP+gv1nwQrlVpVDt843Kqar3ifd1M6syKoTu6SXwScoelb7U3355Id2qVOh+gPoARqnv8F+tbzCVGSVC18H4lEbZ/Wn5fKPw56pQiOsvyJXYKPGdaPp849gTjBDfn9Jo1ecZr494PXKFbnVH40lXNe7PVf79fTTlY5m95vTIEbrV/zSfxDXy+jPqY+kkjQmh6+j6WN7UElvNwMfSuT5yZMJuf7NGHrT/Jt6j1X2G0zkec0RCt3pm7kFxYwb9Bem8DRkdSz4vEWPY98mmjyXUoxPymdlnOPs3A+MA+PG18Qcl03nbu8ee0HUvzPtY9m+CP+f0fIfW+wvS26pj1ccSGP3+PmXRX5BzZnTYPi36WPytZu5jOe9u1Wp/QRa7PebgYzl/noGPZfFGx/c/KAASBTkzqD8AAAAASUVORK5CYII=" alt="Zoho Service" height="50px"  style="margin-left: 18px; margin-bottom: 20px;"></span>
+                <div class="about">
+                    <p class="text-capitalize lead" style="padding-top: 2px; padding-left: 15px; font-weight: bold;">PEOPLE</p>
+                    <p  style="font-size: 12px; padding-left: 13px; position: relative; bottom: 15px;">Organize,automate,and<br>simplify your HR process.</p>
+                  </div>
+               </div>
+               <div class="container-sm" style="display: flex;">
+                <span class="dis-img"><img src="data:image/jpeg;base64,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" alt="Zoho Service" height="60px"  style="margin-left: 17px; margin-bottom: 20px; margin-top: 10px;"></span>
+                <div class="about">
+                    <p class="text-capitalize lead" style="padding-top: 2px; padding-left: 15px; font-weight: bold;">Help Desk</p>
+                    <p  style="font-size: 12px; padding-left: 10px; position: relative; bottom: 15px;">Help desk software to deliver<br>great customer support</p>
+                  </div>
+               </div>
+               <div class="container-sm">
+                <p class="link-link"><a href="#">EXPLORE ALL PRODUCTS</a></p>
+               </div>
+            </div>
+     </div>
+     </div>
+     <div class="container-fluid" style="height: 600px; background-color: rgb(255, 215, 36);">
+        <div class="container-md" style=" height: 200px; position: relative; bottom: 90px;">
+            <span class="badge bg-success" style="position: relative; top: 25px; right: 12px; border-radius: 3px;">SPORTLIGHT</span>
+            <div class="row">
+                <div class="col-3" style=" height: 170px; background-color: white;">
+                   <img src="data:image/png;base64,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" alt="Zoho billing" height="50px" style="margin-top: 40px; margin-left: 30px;">    
+                </div>
+                <div class="col-5" style=" height: 170px; background-color: white;">
+                    <p style="font-size: 20px; padding-left: 30px; padding-top: 20px;">A complete solutio for every biling <br>
+                    requirment.</p>
+                    <button type="button" class="btn btn-info" style="height: 40px; width: 120px; margin-left: 30px; color: white; border-radius: 2px;">Try Now &nbsp; &nbsp;<span style="font-size: 12px;"><i class="bi bi bi-chevron-right"></i></span></button>
+                </div>
+                <div class="col-4" style=" height: 170px;  background-color: white;">
+                    <img src="https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zh-announcement-billing.png" alt="Zoho Billing" height="150px">
+                </div>
+            </div>
+            <br>
+            <div class="container-1">
+                <div class="col-1">
+                   <img src="https://cdn-icons-png.flaticon.com/512/2496/2496798.png" alt="Zoho" height="70px" style="margin-left: 24px; margin-top: 50px;">
+                </div>
+                <div class="col-4">
+                    <p id="service">All-in-one suite</p>
+                    <p id="name">Zoho One</p>
+                    <p id="name-1">The operating system for business</p>
+                    <p id="name-2">Run your entire business on Zoho with our unified cloud<br> software, designed to help you break down silos between<br> departments and increase organizational efficiency</p>
+                    <button type="button" class="btn" style="width: 200px; height: 40px; background-color: red; color: white; position: relative; bottom: 15px; margin-left: 45px; border-radius: 2px;">TRY ZOHO ONE &nbsp; &nbsp;<span style="font-size: 12px;"><i class="bi bi bi-chevron-right"></i></span></button>  
+                </div>
+                <div class="col-6"  style="margin-left: 50px;">
+                    <img src="./minidahsed-PhotoRoom.png" style="height: 250px; margin-top:50px; margin-left: 20px;">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdvht_pkQhGZVH-1NEIhgJkG7k-8PnbQjrGKAsgpiiLZ2nGS9xVcfFLhxbRr5kVt1TgGM&usqp=CAU" alt="Zoho" style="border-radius: 120px; height: 30px; margin-left: 240px; position: relative; bottom: 50px; right: 75px;">
+                   <p id="about">"You can be a startup, mid-sized<br>company, or an enterprise—Zoho<br>One is a boon for all."</p>
+                   <div class="person">
+                      <img src="https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zh-video-poster-prakash.png" alt="Review" height="80px">
+                      <div>
+                        <p id="Prakarsh"><strong>Prakarsh Gagdani</strong></p>
+                        <p id="company">CEO, 5paisa.com (an IIFL subsidiary)</p>
+                      </div>
+                   </div>
+                </div>
+            </div>
+     </div>
+     </div>
+     <div class="container-fluid" style=" background-color: whitesmoke;height: 350px;">
+        <p id="trust">
+            BRANDS THAT TRUST US
+        </p>
+        <img src="./redline-PhotoRoom.png-PhotoRoom.png" width="55px" style="margin-left: 630px;">
+        <div id="brands">
+             <img src="./iifl-PhotoRoom.png-PhotoRoom.png" alt="Trusted Companies" height="70px" style="margin-top: 10px;">
+             <img src="./spicejet-PhotoRoom.png-PhotoRoom.png" alt="Trusted Companies" height="140px" style="position: relative; bottom: 20px; right: 25px;">
+             <img src="./loreal-PhotoRoom.png-PhotoRoom.png" alt="Trusted Companies" height="70px"  style="position: relative; right: 45px; top: 5px;">
+             <img src="./amzon.png"alt="Trusted Companies" height="120px"  style="position: relative; bottom: 9px; right: 25px;">
+             <img src="./tataplay-img.png" alt="Trusted Companies" height="25px" style="margin-top: 30px;">
+             <img src="./zomato-PhotoRoom.png-PhotoRoom.png" alt="Trusted Companies" height="30px" width="100px"style="margin-top: 26px;  margin-left: 30px;">
+             <img src="./maxlife-PhotoRoom.png-PhotoRoom.png" alt="Trusted Companies" height="50px" style="margin-top:15px; margin-left: 25px;">
+        </div>
+        <div class="customer-review">
+            <p id="customer-review"><a href="#" target="_self">CUSTOMER STORIES</a>&nbsp;&nbsp;<span style="font-size: 12px;"><i class="bi bi bi-chevron-right"></i></span></p>
+        </div>
+     </div>
+     <div class="container" style=" height: 700px; background-color: white; display: flex;">
+        <div class="container-sm" style="height: 500px; margin-top: 50px;">
+           <div id="img-div1">
+           </div>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdvht_pkQhGZVH-1NEIhgJkG7k-8PnbQjrGKAsgpiiLZ2nGS9xVcfFLhxbRr5kVt1TgGM&usqp=CAU" alt="Zoho" style="border-radius: 120px; height: 50px; margin-left: 240px; position: relative; bottom: 50px; right: 75px; position: relative; right: 200px; bottom: 35px;">
+           <div id="img-div2" style="display: flex; position: relative; bottom: 50px; ">
+              <div class="about-div-1">
+                <p class="" style="text-align: left; font-size: 20px; font-family: Arial, Helvetica, sans-serif; padding-top: 25px; padding-left: 10px;">" With our complete <br> business under control, our <br> productivity is up by 80% in <br> the last year that we have<br> been using Zoho."</p>
+                 <strong id="strong-2">Thomas John</strong>
+                <p id="position">Managing Director, Agappe Diagnostics</p>
+              </div>
+              <div class="about-div-2">
+                   <img src="https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zh-testimonial-poster-ind.png" height="120px" style="margin-left: 50px; margin-top: 20px;">
+                   <br>
+                   <p class="anchor"><a href="" target="_blank">READ THE STORY</a>&nbsp;&nbsp;<span style="font-size: 12px;"><i class="bi bi bi-chevron-right"></i></span></p>
+              </div>
+           </div>
+        </div>
+        <div class="container-sm" style="height: 500px; margin-top: 50px;">
+          <p class="zoho-enterprise">
+            Zoho for <br> Enterprises
+          </p>
+          <p class="zoho-service">Experience the breadth and depth of the Zoho <br> ecosystem, with the professional services, infrastructure,<br> support, and security that a large business needs.<br> Streamline complex business processes, build strong <br> relationships with your customers, and drive growth at<br>scale.</p>
+          <br>
+          <button type="button" class="btn-info" style="width: 200px; height: 50px; color: white; background-color: rgb(69, 156, 207); border-radius: 2px; border: none;margin-left: 35px;">GET IN TOUCH&nbsp;&nbsp;&nbsp;&nbsp;<I class="bi-chevron-right"></I></button>
+        </div>
+    </div>
+    <div class="container-fluid" style="height: 550px;">
+         <img src="./working-PhotoRoom.png-PhotoRoom.png" style="margin-top: 80px; margin-left: 600px; height: 300px;">
+         <div class="container-fluid" style="height: 550px; background-color: rgb(78, 78, 252); opacity: .6; position: relative; bottom: 380px;">
+            <p id="made"><strong>Made in India.</strong><br>
+                <strong>Made for the World.</strong></p>
+                <div class="container-2" style="width: 550px; height: 300px; margin-top: 50px; display: flex;">
+                      <div class="box-1">
+                        <div class="child-div-1" style="display: flex;">
+                            <span class="hello-span" style="color: white;">100 Million+</span>
+                            <p class="number-1">Globally<br>Users</p>
+                        </div>
+                        <div class="child-div-2" style="display: flex;">
+                            <span class="hello-span" style="color: white;">15k</span>
+                            <p class="number-2">Employess<br>Worldwide</p>
+                        </div>
+                        <div class="child-div-3" style="display: flex;">
+                            <span class="hello-span" style="color: white;">55+</span>
+                            <p class="number-3">Products</p>
+                        </div>
+                      </div>
+                      <div class="box-2">
+                        <div class="child-div-1" style="display: flex;">
+                            <span class="hello-span" style="color: white;">150 +</span>
+                            <p class="number-1">Countries<br>Served</p>
+                        </div>
+                        <div class="child-div-1" style="display: flex;">
+                            <span class="hello-span" style="color: white;">25 +</span>
+                            <p class="number-1">Year in<br>Business</p>
+                        </div>
+                        <button type="button" class="btn btn-outline-light" style="height: 50PX; border-radius: 2px; padding-left: 10px; background-color: none; margin-top: 20px;">MORE ABOUT ZOHO&nbsp;&nbsp; <I class="bi-chevron-right"></I></button>
+                      </div>
+                </div>
+        </div>
+    </div>
+    <div class="container-md" style="height: 550px;">
+          <img src="./privacy-PhotoRoom.png-PhotoRoom.png" height="150px" style="margin-left: 480px; margin-top: 50px;">
+          <p class="text-center" style="font-size: 40px; position: relative; bottom: 25px;">Your privacy is our responsibility</p>
+          <p class="text-center" style="font-size: 20px;">We believe that trust is paramount in a relationship. We do not own or sell your data, and we<br>most certainly do not bank on advertising-based business models. The only way we make <br> money is from the software license fees you pay us.</p>
+          <button type="button" class="btn btn-outline-info" style="width: 200px; height: 50px; border-radius: 2px; margin-top: 10px; margin-left: 450px;"><span style="color: red;"><i class="bi bi-youtube"></i></span>&nbsp;&nbsp;</i>WATCH VIDEO</button>
+    </div>
+    <div class="container-fluid" style=" height: 400px; margin-bottom: 100px;">
+          <img src="https://www.zoho.com/sites/zweb/images/zoho_general_pages/core-value-banner-img-in.webp" height="500px">
+    </div>
+    <div class="container-fluid" style="height: 1300px; background-color: whitesmoke;">
+         <div class="container" style=" height: 850px; position: relative; bottom: 200px; background-color: white; border-radius: 4px;">
+            <p class="text text-center" style="font-size: 40px; padding-top: 80px;">The core values and<br> principles that drive us</p>
+            <div class="container-fluid">
+                <div class="rows gap-2" style="display: flex;">
+                    <div class="col-4 " style=" height: 400px; margin-top: 50px;">
+                        <img src="https://media.istockphoto.com/id/1335694105/vector/shaking-hands.jpg?s=612x612&w=0&k=20&c=04q0HWBX4NtoO8ooy_mqhcF9OsvN6tteCU_ZHNpvnCA=" alt="Zoho" height="100px" style="margin-left: 20px;">
+                        <p class="discription-name">Long-term <br> commitment</p>
+                        <p class="discription-about">25 years of running a profitable<br> organization gives us a good sense<br> of challenges that a growing<br> business faces. We take pride in<br> running a sustainable business<br> that’s powered by you, our<br> customer.</p>
+                    </div>
+                    <div class="col-4"  style="  height: 400px;  margin-top: 50px;">
+                        <img src="https://media.istockphoto.com/id/1282050925/vector/target-icon-on-transparent-background.jpg?s=612x612&w=0&k=20&c=SOu9ubbgNIjroLgZE_yIUvKGiZlnyFR1B5swsLRUwL8=" alt="Zoho" height="100px" style="margin-left: 20px;">
+                        <p class="discription-name">Focus on research<br> & development</p>
+                        <p class="discription-about">Software is our craft and we back it<br> up with our relentless investments in<br> R&D. So much so that we prefer to<br> own the entire technology stack,<br> including running our data centers<br> globally.</p>
+                    </div>
+                    <div class="col-4" style=" height: 400px;  margin-top: 50px;">
+                        <img src="https://static.vecteezy.com/system/resources/previews/007/983/041/original/customer-loyalty-and-retention-color-icon-clients-care-service-customer-support-increasing-participation-involvement-service-request-hand-holding-person-isolated-illustration-vector.jpg" alt="Zoho" height="100px" style="margin-left: 20px;">
+                        <p class="discription-name">Customer-first<br> philosophy</p>
+                        <p class="discription-about">In all these years, it's our<br> customers' trust and goodwill that<br>has helped us establish a strong<br>position in the market. No matter<br> the size of your business, we're<br> here to help you grow.</p>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <button class="btn btn-info" style="height: 50px; width: 200px; border-radius: 2px; margin-left: 450px; color: white; margin-top: 30px;">READ OUR STORY&nbsp;&nbsp;&nbsp;<i class="bi bi-chevron-right"></i></button> 
+            </div>
+            <div class="container" style=" height: 400px; margin-top: 220px;">
+             <div class="rows" style="display: flex; gap: 20px;">
+               <div class="col-7" style=" height: 400px;">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/forbes-2-logo-black-and-white.png" alt="CEO in Forbes" height="30px" style="margin-left: 30px; margin-top: 20px;">
+                <p id="vision-title">Vision from a village</p>
+                <p id="vision">" Why Zoho's CEO moved from California to a hamlet in Tamil Nadu:<br> The lessons this holds for an economy that wants to be self-reliant;<br> for corporations headquartered in big cities; and a country with a high<br> density of urban and migrant workers coming to grips with a<br> pandemic."
+                </p>
+                <button type="button" class="btn btn-outline-info" style="width: 200px; height: 50px; margin-left: 30px; border-radius: 3px; margin-top: 20px;">MORE ON FORBES&nbsp;&nbsp;&nbsp;<i class="bi bi-chevron-right"></i></button>
+               </div>
+               <div class="col-5" style=" height: 400px;">
+                 <div class="container-sm">
+                    <img src="https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zh-forbes-new.webp" alt="Zoho Ceo" height="380px" style="margin-top: 30px; margin-left: 10px;">
+                 </div>
+               </div>
+             </div>
+            </div>
+         </div>
+    </div>
+    <div class="container-fluid" style=" height: 1100px;">
+        <p class="text-center lead" style="font-size: 40px; padding-top: 50px; color: black;">Ready to do your best work ?</p>
+        <p class="lead text text-center" style="font-size: 30px; color: rgb(37, 34, 34);">Let's get you started.</p>
+        <button type="button" class="btn btn-" style="width: 200px; height: 50px; margin-left: 30px; border-radius: 3px; margin-top: 20px; background-color: red; color: white; margin-left: 560px;">SIGHN UP NOW&nbsp;&nbsp;&nbsp;<i class="bi bi-chevron-right"></i></button>
+      <div class="container-fluid" style="height: 800px;  margin-top: 80px; display: flex;">
+       <div class="row" style="height: 550px; width: 1300px; margin: auto; margin-top: 20px; display: flex; gap: 20px;">
+           <div class="can-1">
+              <p style="font-size: 22px; color: black; padding-top: 22px;  padding-left: 30px;">Apps and Extensions</p>
+              <ul class="foot-ul">
+                <li class="foot-list"><a href="" target="_parent">Mobile Apps</a></li>
+                <li class="foot-list"><a href="" target="_parent">Google Workspace Integration</a></li>
+                <li class="foot-list"><a href="" target="_parent">Microsoft 365 Integration</a></li>
+                <li class="foot-list"><a href="" target="_parent">Apps for Apple Watch</a></li>
+                <li class="foot-list"><a href="" target="_parent">Product Integrations</a></li>
+                <li class="foot-list"><a href="" target="_parent">Marketplace</a></li>
+                <li class="foot-list"><a href="" target="_parent">Browser Extensions</a></li>
+              </ul>
+           </div> 
+           <div class="can-2">
+            <p style="font-size: 22px; color: black; padding-top: 22px; padding-left: 30px;">Learn</p>
+            <ul class="foot-ul">
+                <li class="foot-list"><a href="" target="_parent">Training & Certification</a></li>
+                <li class="foot-list"><a href="" target="_parent">Academy</a></li>
+                <li class="foot-list" ><a href="" target="_parent">Academy</a></li>
+                <li class="foot-list"><a href="" target="_parent">Academy</a></li>
+                <li class="foot-list" ><a href="" target="_parent">Blog</a></li>
+                <li class="foot-list"><a href="" target="_parent">Academy</a></li>
+                <li class="foot-list"><a href="" target="_parent">Perspectives</a></li>
+                <li class="foot-list" ><a href="" target="_parent">Academy</a></li>
+                <li class="foot-list"><a href="" target="_parent">Knowledge Base</a></li>
+                <li class="foot-list"><a href="" target="_parent">Zia</a></li>
+                <li class="foot-list"><a href="" target="_parent">The Long Game</a></li>
+                <li class="foot-list"><a href="" target="_parent">Newsletter</a></li>
+            </ul>
+           </div> 
+           <div class="can-2">
+            <p style="font-size: 22px; color: black; padding-top: 22px;  padding-left: 30px;">Community</p>
+            <ul class="foot-ul">
+            <li class="foot-list"><a href="" target="_parent">User Community</a></li>
+            <li class="foot-list"><a href="" target="_parent">Customer Stories</a></li>
+            <li class="foot-list"><a href="" target="_parent">Influence</a></li>
+            <li class="foot-list"><a href="" target="_parent">Partner with Us</a></li>
+            <li class="foot-list"><a href="" target="_parent">Zoho for Startups</a></li>
+            <li class="foot-list"><a href="" target="_parent">Affiliate Program</a></li>
+            <li class="foot-list"><a href="" target="_parent">Humans of Zoho</a></li>
+            </ul>
+           </div> 
+           <div class="can-3">
+            <p style="font-size: 22px; color: black; padding-top: 22px; padding-left: 30px;">Company</p>
+            <ul class="foot-ul">
+            <li class="foot-list"><a href="" target="_parent">About Us</a></li>
+            <li class="foot-list"><a href="" target="_parent">Press</a></li>
+            <li class="foot-list"><a href="" target="_parent">Events</a></li>
+            <li class="foot-list"><a href="" target="_parent">Newsroom</a></li>
+            <li class="foot-list"><a href="" target="_parent">Branding Assets</a></li>
+            <li class="foot-list"><a href="" target="_parent">Zoho Schools</a></li>
+            <li class="foot-list"><a href="" target="_parent">Service Status</a></li>
+            <li class="foot-list"><a href="" target="_parent">Careers</a></li>
+            </ul>
+           </div> 
+           <div class="can-2">
+            <p style="font-size: 22px; color: black; padding-top: 22px;  padding-left: 30px;">Contact Sales</p>
+              <p class="lead" style="padding-left: 27px;">Phone</p>
+              <ul class="list-2">
+                <li class="foot-list-1"><a href="" target="_parent">1800 103 1123</a></li>
+                <li class="foot-list-1"><a href="" target="_parent">1800 572 3535</a></li>
+              </ul>
+              <p class="lead" style="padding-left: 27px;">Email</p>
+              <ul class="list-2">
+                <li class="foot-list-1"><a href="" target="_parent">sales@zohocorp.com</a></li>
+              </ul>
+              <p class="anchor-2"><a href="" target="_self">Support &nbsp; &nbsp; &nbsp;<span class="span-5"><i class="bi bi-chevron-right"></i></span></i></a></p>
+              <p class="anchor-2"><a href="" target="_self">Talk to Concierge &nbsp; &nbsp; &nbsp;<span class="span-6"><i class="bi bi-chevron-right"></i></span></a></p>
+           </div> 
+       </div>
+       </div>
+       <div class="container-lg" style="height: 100px; position: relative; bottom: 250px; justify-content: center; gap: 20px; margin-top: 10px;">
+        <div style="display: flex; justify-content: center; gap: 20px;">
+       <img src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png" alt="Zoho-media" height="30px">
+       <img src="https://logowik.com/content/uploads/images/twitter-x5265.logowik.com.webp" height="30px">
+       <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" height="30px">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" height="30px">
+       </div>
+       <br>
+       <div>
+       <p style="display: flex; margin-left: 200px;">Zoho Home
+        Contact Us&nbsp;&nbsp;&nbsp;
+        Security&nbsp;&nbsp;&nbsp;
+        IPR Complaints&nbsp;&nbsp;&nbsp;
+        Anti-spam Policy&nbsp;&nbsp;&nbsp;
+        Terms of Service&nbsp;&nbsp;&nbsp;
+        Privacy Policy<br>
+        <p style="padding-left: 350px;">   
+        Privacy Policy&nbsp;&nbsp;&nbsp;
+        Cookie Policy&nbsp;&nbsp;&nbsp;
+        GDPR Compliance&nbsp;&nbsp;&nbsp;
+        Abuse Policy
+        </p>
+        </div>
+       </div>
+       </div>
+    </div>
+    <div class="container-fluid" style="border: solid; height: 150px; background-color: rgb(2, 2, 43);">
+         <img src="https://www.zoho.com/sites/zweb/images/zoho_general_pages/zoho-logo-512.png" alt="zoho-logo" height="40px" style="margin-left: 620px; margin-top: 30px;">
+         <p style="text-align: center; color: white; padding-top: 10px;">© 2023, Zoho Corporation Pvt. Ltd. All Rights Reserved.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
